@@ -15,6 +15,18 @@ export interface FormData {
   SearchQuery: string
 }
 
+interface LegalDoc {
+ 
+   id: number;
+  title : string;
+  content: string;
+
+}
+interface ApiResponse {
+   query : string ;
+  summary:string;
+  results:  LegalDoc[];
+}
 export interface ResultProps {
-  response : any
+   SummaryResult : ApiResponse | null
 }

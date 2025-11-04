@@ -38,7 +38,7 @@ export default function SearchField({setLoading, setError, setUserResponse}: Sea
             className="border border-gray-300 rounded-lg p-2 w-full focus:outline-blue-500"
             />
             <button type="submit" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg w-full transition">
-                
+                Submit
             </button>
 
         </form>
