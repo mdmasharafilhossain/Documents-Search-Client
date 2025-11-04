@@ -23,7 +23,7 @@ interface LegalDoc {
 
 }
 interface ApiResponse {
-   query : string ;
+   SearchQuery : string ;
   summary:string;
   results:  LegalDoc[];
 }
