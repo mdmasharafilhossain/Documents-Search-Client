@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useForm } from "react-hook-form";
-import { type FormData, type Props } from "../types";
+import { type FormData, type SearchProps } from "../types";
 import useAxios from "../utilis/useAxios";
 
 
-export default function SearchField({setLoading, setError, setUserResponse}: Props){
+export default function SearchField({setLoading, setError, setUserResponse}: SearchProps){
     
     const {register,handleSubmit,reset}=useForm<FormData>()
      
