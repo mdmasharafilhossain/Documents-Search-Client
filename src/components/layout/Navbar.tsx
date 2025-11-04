@@ -19,15 +19,15 @@ const Navbar: React.FC = () => {
         >
             Home
         </NavLink></li>
-        <li><a href='#register'><NavLink
-            to="/register" style={{ fontWeight: "bold", fontSize: "20px", }}
+        <li><NavLink
+            to="/search-docs" style={{ fontWeight: "bold", fontSize: "20px", }}
             className={({ isActive, isPending }: { isActive: boolean; isPending: boolean }) =>
                 isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
             }
             onClick={() => setMenuOpen(false)}
         >
             Search Documents
-        </NavLink></a></li>
+        </NavLink></li>
 
 
 

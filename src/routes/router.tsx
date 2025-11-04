@@ -10,7 +10,8 @@ export const router = createBrowserRouter([
         {
             Component: HomePage,
             path:'/'
-        }
+        },
+       
     ]
   },
 ]);
