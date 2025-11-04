@@ -31,7 +31,7 @@ export default function SearchField({setLoading, setError, setUserResponse}: Sea
     return (
         <form onSubmit={handleSubmit(onSubmit)} className="w-[350px] sm:w-96 md:w-2xl lg:w-5xl bg-white shadow-lg rounded-2xl p-6 border border-orange-200 transition-all duration-300 hover:shadow-orange-300">
             <label className="block text-orange-700 mb-2 font-semibold text-lg">
-               Enter your legal query
+               Enter your  query
             </label>
 
             <input
