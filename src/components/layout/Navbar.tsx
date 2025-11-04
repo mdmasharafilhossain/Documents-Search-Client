@@ -5,26 +5,29 @@ import { useState } from 'react';
 import { IoMdClose } from 'react-icons/io';
 
 
-const Navbar: React.FC = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
 
-    const toggleMenu = () => setMenuOpen(!menuOpen)
+const Navbar: React.FC = () => {
+   const [menuOpen, setMenuOpen]= useState(false)
+   const toggleMenu = ()=> setMenuOpen(!menuOpen)
+   const closeMenu = ()=> setMenuOpen(false)
+
+   
     const NavLinks = <>
         <li><NavLink
-            to="/" style={{ fontWeight: "bold", fontSize: "20px", }}
-            className={({ isActive, isPending }: { isActive: boolean; isPending: boolean }) =>
-                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+            to="/" onClick={closeMenu} style={{ fontWeight: "bold", fontSize: "20px", }}
+            className={({ isActive }: { isActive: boolean}) =>
+             isActive ? "text-orange-600 underline" : ""
             }
-            onClick={() => setMenuOpen(false)}
+            
         >
             Home
         </NavLink></li>
-        <li><NavLink
-            to="/search-docs" style={{ fontWeight: "bold", fontSize: "20px", }}
-            className={({ isActive, isPending }: { isActive: boolean; isPending: boolean }) =>
-                isPending ? "pending" : isActive ? "text-orange-600 underline" : ""
+        <li><NavLink 
+            to="/search-docs" onClick={closeMenu} style={{ fontWeight: "bold", fontSize: "20px", }}
+            className={({ isActive}: { isActive: boolean}) =>
+            isActive ? "text-orange-600 underline" : ""
             }
-            onClick={() => setMenuOpen(false)}
+            
         >
             Search Documents
         </NavLink></li>
@@ -39,29 +42,20 @@ const Navbar: React.FC = () => {
             <div className='shadow-lg bg-base-100 fixed top-0 left-0 right-0 z-50'>
                 <div className="navbar bg-base-100 ">
                     <div className="navbar-start">
-                        <div className="dropdown">
-                            <label tabIndex={0} className="btn btn-ghost lg:hidden"
-                                onClick={toggleMenu}
-                            >
-                                {
-                                    menuOpen ? (
-                               <IoMdClose className='text-2xl text-orange-600' />
-                                    ) : (
-                               <FiAlignJustify className='text-2xl text-orange-600' />
-                                    )
-                                }
+                        <button className='btn btn-ghost lg:hidden' onClick={toggleMenu} aria-label='Toggle-Menu'>
 
-                            </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-1 p-4 shadow bg-base-100 rounded-box w-60 border border-orange-500">
-                                {NavLinks}
-                                  <div className="flex justify-center mt-3">
-                             
-  </div>
-                            </ul>
-                          
-                        </div>
+                            {
+                                menuOpen ? (
+                                    <IoMdClose className="text-3xl text-orange-600" />
+                                ):(
+                               <FiAlignJustify className="text-2xl text-orange-600" />
+                                )
+                            }
+
+                        </button>
                         <img className='h-14 w-20  hidden lg:block ml-10' src={logo} alt="Logo" />
                     </div>
+
                     <img className='h-14 w-28 block md:block lg:hidden' src={logo} alt="Logo" />
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -74,7 +68,16 @@ const Navbar: React.FC = () => {
 
                     </div>
                 </div>
+                {
+                menuOpen && (
+                    <div className='absolute top-full left-4 bg-base-100 border border-orange-500 shadow-md rounded-lg lg:hidden w-60 animate-slideDown'> 
+                    <ul className='menu p-4 space-y-2  '> {NavLinks} </ul>
+                    </div>
+                )
+
+            }
             </div>
+            
         </div>
     );
 };

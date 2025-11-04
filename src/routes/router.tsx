@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
 import HomePage from "../pages/HomePage";
+import SearchDocs from "../pages/SearchDocs";
 
 export const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ export const router = createBrowserRouter([
             Component: HomePage,
             path:'/'
         },
+        {
+          Component:SearchDocs,
+          path:'/search-docs'
+        }
        
     ]
   },
