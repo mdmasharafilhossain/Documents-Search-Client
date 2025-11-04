@@ -12,7 +12,7 @@ export default function  ShowResult({SummaryResult }: ResultProps){
         const  {SearchQuery, summary, results} = SummaryResult
 
         return (
-            <div className="mt-8 w-[350px] sm:w-96 md:w-2xl lg:w-5xl bg-white p-6 rounded-2xl shadow-lg border border-orange-200 mx-auto">
+            <div className="mt-8 w-[350px] sm:w-96 md:w-2xl lg:w-[1000px] bg-white p-6 rounded-2xl shadow-lg border border-orange-200 mx-auto">
                 <h2 className="text-2xl font-bold text-orange-600 mb-3">
                     Search Summary For : {SearchQuery}
                 </h2>
