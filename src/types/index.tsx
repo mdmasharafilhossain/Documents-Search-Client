@@ -6,8 +6,9 @@ export interface IProps {
 
 export interface Props {
   setLoading : (val: boolean) => void
-  setError : (val: boolean) => void
-  setUserResponse : (val: boolean) => void
+  setError : (val: string) => void
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  setUserResponse : (val: any) => void
 }
 
 export interface FormData {
