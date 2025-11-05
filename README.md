@@ -33,17 +33,26 @@ Users can search for legal documents, view summarized results, and navigate thro
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/mdmasharafilhossain/Documents-Search-Client
+```
+
+### 2️⃣ Navigate to the Project Folder
+```bash
 cd Documents-Search-Client
 ```
-### 2️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```bash
 npm install
 ```
 
-### 3️⃣ Start the Development
+### 4️⃣ Start the Development Project
 ```bash
 npm run dev
-Then open your browser at http://localhost:5173
+
+```
+
+### 5️⃣ Open the Project in Your Browser
+```bash
+open your browser at http://localhost:5173 
 ```
 ## Live URLs
 
