@@ -47,8 +47,8 @@ Then open your browser at http://localhost:5173
 ```
 ## Live URLs
 
-- **Frontend:** [Portfolio Builder Live](https://docfind-client.vercel.app/)  
-- **Backend:** [Portfolio Builder API](https://docfind-server.vercel.app/)  
+- **Frontend:** [DocFind Live Link](https://docfind-client.vercel.app/)  
+- **Backend:** [DocFind API Live](https://docfind-server.vercel.app/)  
 
 ##  Author
 
