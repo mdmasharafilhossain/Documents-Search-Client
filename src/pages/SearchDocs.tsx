@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchField from "../components/SearchField";
 import ShowResult from "../components/ShowResult";
 
@@ -8,8 +8,11 @@ const SearchDocs:React.FC = () => {
     const [loading, setLoading]= useState(false)
     const [error, setError] = useState("")
     const [UserResponse,setUserResponse]= useState<any>(null)
+    useEffect(()=>{
+            document.title = "DocFInd | Search"
+          },[]);
     return (
-        <div className="mt-10 min-h-screen bg-white flex flex-col justify-center items-center px-4 py-10">
+        <div className="mt-14 min-h-screen bg-white flex flex-col justify-center items-center px-4 py-10">
            <div className="text-center mb-8">
               <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold text-orange-600 mb-3">
                   Search Documents 
