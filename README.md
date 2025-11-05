@@ -9,8 +9,8 @@ Users can search for legal documents, view summarized results, and navigate thro
 
 - **Search Functionality:** Users can input queries to search for mock legal documents.  
 - **AI-like Summary Display:** Shows summarized results of legal documents fetched from a mocked backend API.  
-- **Routing System:** Implemented using **React Router DOM** for smooth navigation.  
-- **Responsive UI:** Styled with **Tailwind CSS** for a clean, modern look.  
+- **Routing System:** Implemented using React Router DOM for smooth navigation.  
+- **Responsive UI:** Styled with Tailwind CSS for a clean, modern look.  
 - **TypeScript Support:** Ensures type safety and better maintainability.  
 
 ---
