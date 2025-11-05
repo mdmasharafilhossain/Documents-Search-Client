@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# DocFind (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional frontend application built with **React + TypeScript**, simulating a legal document search and summary system.  
+Users can search for legal documents, view summarized results, and navigate through a clean and responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Search Functionality:** Users can input queries to search for mock legal documents.  
+- **AI-like Summary Display:** Shows summarized results of legal documents fetched from a mocked backend API.  
+- **Routing System:** Implemented using **React Router DOM** for smooth navigation.  
+- **Responsive UI:** Styled with **Tailwind CSS** for a clean, modern look.  
+- **TypeScript Support:** Ensures type safety and better maintainability.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+| Category | Technologies |
+|-----------|--------------|
+| Framework | React (TypeScript) |
+| Routing | React Router DOM |
+| Styling | Tailwind CSS |
+| HTTP Client | Axios |
+| State Management | React Hooks |
+| Mock API | FastAPI (Backend Simulation) |
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Setup Instructions
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/mdmasharafilhossain/Documents-Search-Client
+cd Documents-Search-Client
+```
+### 2️⃣ Install Dependencies
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 3️⃣ Start the Development Server
+```bash
+npm run dev
 ```
+## Live URLs
+
+- **Frontend:** [Portfolio Builder Live](https://portfolio-builder-client-rosy.vercel.app/)  
+- **Backend:** [Portfolio Builder API](https://builder-portfolio-eta.vercel.app/)  
+
+##  Author
+
+**Mohammad Mashrafil Hossain Mahi**  
+Full Stack Developer
+
+Email: mashrafilmahi007@gmail.com 
+
