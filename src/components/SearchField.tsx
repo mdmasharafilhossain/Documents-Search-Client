@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useForm } from "react-hook-form";
 import { type FormData, type SearchProps } from "../types";
@@ -19,7 +20,7 @@ export default function SearchField({setLoading, setError, setUserResponse}: Sea
             setUserResponse(res.data)
 
         }catch(err:any){
-            console.log(err);
+           
             setError("Something went wrong. Please try again...");
         }finally{
             setLoading(false)

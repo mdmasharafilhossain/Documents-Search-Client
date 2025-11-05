@@ -1,6 +1,6 @@
 # DocFind (Frontend)
 
-A professional frontend application built with **React + TypeScript**, simulating a legal document search and summary system.  
+DocFind is a professional frontend application built with **React + TypeScript**, simulating a legal document search and summary system.  
 Users can search for legal documents, view summarized results, and navigate through a clean and responsive interface.
 
 ---
@@ -40,14 +40,15 @@ cd Documents-Search-Client
 npm install
 ```
 
-### 3️⃣ Start the Development Server
+### 3️⃣ Start the Development
 ```bash
 npm run dev
+Then open your browser at http://localhost:5173
 ```
 ## Live URLs
 
 - **Frontend:** [Portfolio Builder Live](https://portfolio-builder-client-rosy.vercel.app/)  
-- **Backend:** [Portfolio Builder API](https://builder-portfolio-eta.vercel.app/)  
+- **Backend:** [Portfolio Builder API](https://docfind-server.vercel.app/)  
 
 ##  Author
 
