@@ -9,7 +9,7 @@ const SearchDocs:React.FC = () => {
     const [error, setError] = useState("")
     const [UserResponse,setUserResponse]= useState<any>(null)
     useEffect(()=>{
-            document.title = "DocFInd | Search"
+            document.title = "DocFind | Search"
           },[]);
     return (
         <div className="mt-14 min-h-screen bg-white flex flex-col justify-center items-center px-4 py-10">

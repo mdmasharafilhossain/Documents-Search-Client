@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 
 const HomePage: React.FC = () => {
      useEffect(()=>{
-        document.title = "DocFInd | Home"
+        document.title = "DocFind | Home"
       },[]);
     return (
        <>
