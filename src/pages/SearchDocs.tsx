@@ -9,9 +9,9 @@ const SearchDocs:React.FC = () => {
     const [error, setError] = useState("")
     const [UserResponse,setUserResponse]= useState<any>(null)
     return (
-        <div className="min-h-screen bg-white flex flex-col justify-center items-center px-4 py-10">
+        <div className="mt-10 min-h-screen bg-white flex flex-col justify-center items-center px-4 py-10">
            <div className="text-center mb-8">
-              <h1 className="text-4xl font-bold text-orange-600 mb-3">
+              <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold text-orange-600 mb-3">
                   Search Documents 
               </h1>
               
