@@ -47,7 +47,6 @@ npm install
 ### 4️⃣ Start the Development Project
 ```bash
 npm run dev
-
 ```
 
 ### 5️⃣ Open the Project in Your Browser

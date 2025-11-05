@@ -53,7 +53,7 @@ const Footer:React.FC = () => {
         
 
         <aside>
-          <p>Copyright  &copy; {new Date().getFullYear()} - All rights reserved by{" "} <span className="font-semibold text-[#ff3811]">DocFind</span></p>
+          <p>Copyright  &copy; {new Date().getFullYear()} - All rights reserved by{" "} <span className="font-semibold text-orange-600">DocFind</span></p>
         </aside>
       </footer>
      
